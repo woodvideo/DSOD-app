@@ -10,7 +10,7 @@
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
-	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreen" value="screen" />
 	<plugin spec="https://github.com/woodvideo/cordova-plugin-firebase-dsod.git" source="git" />
 	<plugin name="cordova-plugin-firebase" spec="0.1.21" />
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />

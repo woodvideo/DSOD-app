@@ -7,16 +7,19 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <title>DSOD 2017</title>
-    
+
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/skin.css">
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
 <link rel="stylesheet" type="text/css" href="styles/ionicons.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/gallery-script.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+
 </head>
 
 <body>
@@ -51,11 +54,11 @@
 					<a href="band-br.html"><span>Bad Ragas</span></a>
 				</div>
 				<a href="camera.html"><i class="icon-bg donker-bg ion-camera"></i><span>Camera</span><i class="ion-record"></i></a>
-				<a class="active-item" href="fotos.html"><i class="icon-bg donker-bg ion-image"></i><span>Fotos</span><i class="ion-record"></i></a>				
+				<a class="active-item" href="fotos.html"><i class="icon-bg donker-bg ion-image"></i><span>Fotos</span><i class="ion-record"></i></a>
 				<a href="#" class="close-sidebar"><i class="icon-bg bg-red-light ion-android-close"></i><span>Close</span><i class="ion-record"></i></a>
 				<em class="menu-divider">Copyright <u class="copyright-year"></u>. All rights reserved</em>
 			</div>
-		</div> 
+		</div>
 		<div class="sidebar sidebar-right">
 			<div class="sidebar-header sidebar-header-classic">
 				<div class="sidebar-socials">
@@ -81,15 +84,15 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="header header-logo-center header-light">
 		<a href="#" class="header-icon header-icon-1 hamburger-animated open-sidebar-left"></a>
 		<a href="index.html" class="header-logo"></a>
-		<a href="#" class="header-icon header-icon-4 open-sidebar-right"><i class="ion-ios-email-outline"></i></a>    
+		<a href="#" class="header-icon header-icon-4 open-sidebar-right"><i class="ion-ios-email-outline"></i></a>
 	</div>
-	
-	<div id="page-content" class="page-content">	
-		<div id="page-content-scroll" class="header-clear"><!--Enables this element to be scrolled --> 
+
+	<div id="page-content" class="page-content">
+		<div id="page-content-scroll" class="header-clear"><!--Enables this element to be scrolled -->
 
 			<div class="heading-strip bg-8">
 				<h3>DSOD 2017 fotos</h3>
@@ -100,132 +103,140 @@
 
 			<div class="decoration decoration-margins"></div>
 
+      <div class="gallery"></div>
+
+      <script id="gallery-template" type="text/x-handlebars-template">
+        {{#each files}}
+          <img src="http://dep.woodvideo.nl/foto/upload/{{file}}" alt="">
+        {{/each}}
+      </script>
+
 			<div class="content-fullscreen">
 				<div class="gallery-blocks">
 					<a class="show-gallery animate-fade" href="images/pictures/0.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Windsurfing</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/0t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-50" href="images/pictures/1.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Muziek</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/1t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-100" href="images/pictures/2.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Bier</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/2t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-150" href="images/pictures/3.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Braao</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/3t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-200" href="images/pictures/4.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>BBQ</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/4t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-250" href="images/pictures/5.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Sunrise</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/5t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-300" href="images/pictures/6.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Skateboard</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/6t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-350" href="images/pictures/7.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Storm</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/7t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-400" href="images/pictures/8.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>30 knopen</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/8t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-450" href="images/pictures/9.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Feest</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/9t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-500" href="images/pictures/0.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Grill</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/0t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-550" href="images/pictures/1.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Zee</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/1t.jpg" alt="img">
-					</a>                  
+					</a>
 					<a class="show-gallery animate-fade animate-delay-600" href="images/pictures/0.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Water</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/0t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-650" href="images/pictures/1.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Spoelen</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/1t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-700" href="images/pictures/2.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Prijzen</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/2t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-750" href="images/pictures/3.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Oceaan</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/3t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-800" href="images/pictures/4.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Clean-up</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/4t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-850" href="images/pictures/5.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Strand</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/5t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-900" href="images/pictures/6.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Feest</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/6t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-950" href="images/pictures/7.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Storm</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/7t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-1000" href="images/pictures/8.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>#DSOD 2017</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/8t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-1050" href="images/pictures/9.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Varen</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/9t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-1100" href="images/pictures/0.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Boards</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/0t.jpg" alt="img">
-					</a>                
+					</a>
 					<a class="show-gallery animate-fade animate-delay-1150" href="images/pictures/1.jpg" alt="img" title="Image Caption">
 						<em class="overlay"></em>
 						<strong>Zeil</strong>
 						<img class="preload-image responsive-image" data-original="images/pictures/1t.jpg" alt="img">
-					</a>  
+					</a>
 					<div class="clear"></div>
 				</div>
 			</div>
-			
+
 			<div class="decoration decoration-margins"></div>
 
 			<div class="footer footer-light">
@@ -237,7 +248,7 @@
 					</p>
 			</div>
 
-		</div>  
+		</div>
 	</div>
 	<a href="#" class="back-to-top-badge"><i class="ion-ios-arrow-up"></i></a>
 </div>

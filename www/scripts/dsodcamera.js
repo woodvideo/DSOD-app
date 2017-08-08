@@ -7,15 +7,14 @@ function getImage() {
 		 saveToPhotoAlbum: true, 
 		 correctOrientation: true
 		 });
-}
+		}
 
-		function uploadPhoto(imageURI) {
+function uploadPhoto(imageURI) {
 		 var options = new FileUploadOptions();
 		 options.fileKey = "file";
 		 options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
 		 options.mimeType = "image/jpeg";
 		 console.log(options.fileName);
-		 
 		 var params = new Object();
 		 params.value1 = "test";
 		 params.value2 = "param";
@@ -31,4 +30,4 @@ function getImage() {
 		 }, function(error){
 		 console.log(JSON.stringify(error));
 		 }, options);
-}
+		 }

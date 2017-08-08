@@ -1,6 +1,6 @@
 function getImage() {
 		 navigator.camera.getPicture(uploadPhoto, function(message) {
-		 alert('get picture failed');
+		 alert('MISLUKT');
 		 }, {
 		 quality: 100,
 		 destinationType: 1,
